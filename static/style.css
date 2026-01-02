@@ -1,0 +1,178 @@
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ---------- BODY (NO FLEX – IMPORTANT) ---------- */
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #0f2027, #000000 70%);
+    overflow-x: hidden;
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(5, 15, 20, 0.9);
+    border-bottom: 1px solid rgba(0, 242, 254, 0.25);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav h2 {
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00f2fe;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.container {
+    position: relative;
+    margin: 180px auto !important;   /* 🔥 FORCED VISIBILITY */
+    width: 420px;
+    padding: 40px;
+    background: rgba(15, 32, 39, 0.85);
+    border-radius: 22px;
+    border: 1px solid rgba(0, 242, 254, 0.35);
+    box-shadow: 0 0 35px rgba(0, 242, 254, 0.25);
+    color: #eafcff;
+}
+
+/* ---------- TEXT ---------- */
+.container h1,
+.container p {
+    color: #eafcff;
+    text-align: center;
+}
+.container h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+/* ---------- FORM GRID ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* ---------- INPUTS ---------- */
+input {
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    color: #000000;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #555555;
+}
+
+input:focus {
+    transform: scale(1.03);
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(0, 242, 254, 0.6);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------- RESULT PAGE ---------- */
+.result-box {
+    position: relative;
+    margin: 180px auto;
+    width: 400px;
+    background: rgba(15, 32, 39, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 0 35px rgba(0, 242, 254, 0.25);
+}
+
+.result {
+    font-size: 28px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.back {
+    text-decoration: none;
+    color: #00f2fe;
+    font-weight: bold;
+}
+
+/* ---------- ABOUT / MODEL PAGE ---------- */
+.page-box {
+    position: relative;
+    margin: 180px auto;
+    width: 60%;
+    background: rgba(15, 32, 39, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: 0 0 35px rgba(0, 242, 254, 0.25);
+}
+
+.page-box h1 {
+    margin-bottom: 20px;
+}
+
+.page-box p,
+.page-box li {
+    line-height: 1.7;
+}

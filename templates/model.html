@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Details | DiabetesAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <h2>DiabetesAI</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/model">Model</a></li>
+    </ul>
+</nav>
+
+<div class="page-box">
+    <h1>Model & Dataset Details</h1>
+
+    <h3>Machine Learning Model</h3>
+    <p>
+        A supervised machine learning classification model trained on medical
+        diagnostic data to classify patients as diabetic or non-diabetic.
+    </p>
+
+    <h3>Input Features</h3>
+    <ul>
+        <li>Pregnancies</li>
+        <li>Glucose Level</li>
+        <li>Blood Pressure</li>
+        <li>Skin Thickness</li>
+        <li>Insulin</li>
+        <li>BMI</li>
+        <li>Diabetes Pedigree Function</li>
+        <li>Age</li>
+    </ul>
+
+    <h3>Output</h3>
+    <p>
+        Binary classification indicating whether the patient is
+        <strong>Diabetic</strong> or <strong>Non-Diabetic</strong>.
+    </p>
+</div>
+
+</body>
+</html>
